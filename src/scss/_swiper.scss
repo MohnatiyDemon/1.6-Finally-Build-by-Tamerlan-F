@@ -1,0 +1,120 @@
+.title-swiper {
+  border-top: 1px solid #d9fff5;
+  padding: 16px;
+  background: linear-gradient(90deg, #f8f8f8, #ffffff);
+}
+.title-swiper__h1 {
+  color: #7e7e82;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.swiper {
+}
+.swiper-wrapper {
+  display: flex;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+  flex-basis: 100%;
+  gap: 16px 24px;
+  padding: 24px 24px 0 24px;
+}
+.swiper-slide {
+  padding: 0 16px;
+  max-width: 224px;
+  height: 72px;
+  border: 1px solid #eaeaea;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.swiper-slide__img {
+  height: auto;
+  width: auto;
+}
+.swiper-slide__button {
+  background: #ffffff url('../img/icons/go.svg') no-repeat;
+  height: 40px;
+  width: 40px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1 ease;
+  border-radius: 50%;
+}
+.swiper-slide__button:hover {
+  transform: scale(1.1);
+  box-shadow: inset 0 0 20px 3px #f40685;
+}
+.swiper-pagination {
+  position: relative;
+  margin-top: 20px;
+}
+.swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  background-color: #dddddd;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #b5b6bc;
+}
+.read-more {
+  display: none;
+  padding: 24px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.read-more__button {
+  position: relative;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 24px;
+}
+
+.read-more__button::before {
+  content: url('../img/icons/expand.svg');
+  position: absolute;
+  left: -30px;
+  top: -3.5px;
+  transition: transform 200ms linear;
+}
+.read-more__button--active::before {
+  transform: rotate(180deg) translate(0, 3.5px);
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+  .read-more {
+    display: flex;
+  }
+
+  .swiper-wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1366.1px) {
+  .main {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .read-more {
+    display: flex;
+  }
+
+  .swiper-wrapper {
+    flex-wrap: wrap;
+  }
+}

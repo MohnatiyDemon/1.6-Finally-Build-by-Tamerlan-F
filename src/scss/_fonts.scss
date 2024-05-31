@@ -1,0 +1,43 @@
+$font-path: '../fonts';
+
+@mixin font-face($font-family, $font-weight, $font-style, $eot, $woff, $ttf) {
+  @font-face {
+    font-family: '#{$font-family}';
+    src: url('#{$font-path}/#{$eot}.eot');
+    src: local('#{$font-family}'), local('#{$eot}'),
+      url('#{$font-path}/#{$eot}.eot?#iefix') format('embedded-opentype'),
+      url('#{$font-path}/#{$woff}.woff') format('woff'),
+      url('#{$font-path}/#{$ttf}.ttf') format('truetype');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+
+@include font-face(
+  'TT Lakes',
+  bold,
+  normal,
+  'TTLakes-Bold',
+  'TTLakes-Bold',
+  'TTLakes-Bold'
+);
+@include font-face(
+  'TT Lakes',
+  normal,
+  normal,
+  'TTLakes-Regular',
+  'TTLakes-Regular',
+  'TTLakes-Regular'
+);
+@include font-face(
+  'TT Lakes',
+  500,
+  normal,
+  'TTLakes-Medium',
+  'TTLakes-Medium',
+  'TTLakes-Medium'
+);
+
+* {
+  font-family: 'TT Lakes', 'Times New Roman', sans-serif;
+}

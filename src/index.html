@@ -10,21 +10,151 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
+    <div class="main-container">
+      <header class="header">
+        <nav class="header-nav">
+          <ul class="header-nav__menu header-nav__menu--left-side">
+            <li class="header-nav__item">
+              <button
+                class="header-nav__button header-nav__button--burger"
+              ></button>
+            </li>
+            <li class="header-nav__item">
+              <button class="header-nav__image header-nav__image--group">
+                <img src="img/icons/group.svg" alt="Логотип компании CSP" />
+              </button>
+            </li>
+          </ul>
+          <ul class="header-nav__menu header-nav__menu--right-side">
+            <li class="header-nav__item">
+              <button
+                class="header-nav__button header-nav__button--call"
+              ></button>
+            </li>
+            <li class="header-nav__item">
+              <button
+                class="header-nav__button header-nav__button--chat"
+              ></button>
+            </li>
+            <li class="header-nav__item">
+              <button
+                class="header-nav__button header-nav__button--profile"
+              ></button>
+            </li>
+            <li class="header-nav__item">
+              <button
+                class="header-nav__button header-nav__button--repair"
+              ></button>
+            </li>
+            <li class="header-nav__item">
+              <button
+                class="header-nav__button header-nav__button--checkstatus"
+              ></button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="title">
+          <div class="title-text">
+            <h1 class="title-text__h1">Услуги и сервисы</h1>
+          </div>
+
+          <nav class="title-nav">
+            <ul class="title-nav__menu">
+              <li class="title-nav__item">
+                <button class="title-nav__button--repair"
+                  >Оставить заявку</button
+                >
+              </li>
+
+              <li class="title-nav__item">
+                <button class="title-nav__button--checkstatus">
+                  Статус ремонта
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="main-items">
+          <button class="main-items__button main-items__button--active">
+            Ремонтируемые бренды
+          </button>
+          <button class="main-items__button">Ремонтируемые устройства</button>
+          <button class="main-items__button">Дополнительные услуги</button>
+          <button class="main-items__button">Цены на услуги</button>
+          <button class="main-items__button">Аренда сервисных центров</button>
+          <button class="main-items__button">Специальные цены</button>
+          <button class="main-items__button">Отзывы</button>
+        </div>
+        <section class="description">
+          <div class="description-text">
+            <p class="description__first-p">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </p>
+            <br />
+            <p class="description__second-p">
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера,
+              <span class="description__third-p">
+                что подтверждает большое количество постоянных клиентов. Мы
+                гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                очередь, советуют нас родным и близким.
+              </span>
+            </p>
+            <br />
+            <p class="description__fourth-p">
+              Мы сотрудничаем с торговыми сетями, корпоративными клиентами,
+              государственными организациями и частными лицами. Услугами CPS
+              пользуются в России, странах СНГ и на международном рынке.
+              Обслуживаем технику Lenovo, Maibenben, ASUS, Xiaomi, Motorola,
+              Redmond, Kitfort, Philips, AOC, Kodak и др.
+              <br />
+              <br />
+              У нас команда квалифицированных специалистов. Многие из них
+              работают со дня основания компании.
+              <br />
+              <br />
+              Мы любим технику и делаем всё, чтобы она работала так, как вам
+              нужно.
+            </p>
+            <div class="description-read-more">
+              <button class="description-read-more__button"
+                >Читать далее</button
+              >
+            </div>
+          </div>
+          <div>
+            <img
+              src="img/pictures/CPS picture.png"
+              alt="Логотип CSP на входе в офис"
+              class="section__img"
+            />
+          </div>
+        </section>
+      </main>
+    </div>
     <aside class="burger">
       <nav class="burger-nav">
-        <ul class="burger-nav__ul burger-nav__ul--left-side">
-          <li class="burger-nav__item burger-nav__item--burger-opened">
-            <a href="#"></a>
+        <ul class="burger-nav__menu burger-nav__menu--left-side">
+          <li class="burger-nav__item">
+            <button
+              class="burger-nav__button burger-nav__button--burger-opened"
+            ></button>
           </li>
-          <li class="burger-nav__image burger-nav__image--logo">
-            <a href="#">
+          <li class="burger-nav__item">
+            <button class="burger-nav__image burger-nav__image--grop">
               <img src="img/icons/group.svg" alt="Логотип компании CSP" />
-            </a>
+            </button>
           </li>
         </ul>
-        <ul class="burger-nav__ul burger-nav__ul--right-side">
-          <li class="burger-nav__item burger-nav__item--search">
-            <a href="#"> </a>
+        <ul class="burger-nav__menu burger-nav__menu--right-side">
+          <li class="burger-nav__item">
+            <button
+              class="burger-nav__button burger-nav__button--search"
+            ></button>
           </li>
         </ul>
       </nav>
@@ -42,15 +172,21 @@
         <button class="burger-menu__button">Контакты</button>
       </nav>
       <nav class="burger-footer">
-        <ul class="burger-footer__ul">
-          <li class="burger-footer__item burger-footer__item--call">
-            <a href="#"></a>
+        <ul class="burger-footer__menu">
+          <li class="burger-footer__item">
+            <button
+              class="burger-footer__button burger-footer__button--call"
+            ></button>
           </li>
-          <li class="burger-footer__item burger-footer__item--chat">
-            <a href="#"></a>
+          <li class="burger-footer__item">
+            <button
+              class="burger-footer__button burger-footer__button--chat"
+            ></button>
           </li>
-          <li class="burger-footer__item burger-footer__item--profile">
-            <a href="#"></a>
+          <li class="burger-footer__item">
+            <button
+              class="burger-footer__button burger-footer__button--profile"
+            ></button>
           </li>
         </ul>
 
@@ -71,315 +207,5 @@
         <button class="burger-select-language__button">CH</button>
       </div>
     </aside>
-    <div class="main-container">
-      <header class="header">
-        <nav class="header-nav">
-          <ul class="header-nav__menu header-nav__menu_main">
-            <li class="header-nav__item header-nav__item--burger">
-              <a href="#"></a>
-            </li>
-            <li class="header-nav__item header-nav__item--group">
-              <a href="#">
-                <img src="img/icons/group.svg" alt="Логотип компании CSP" />
-              </a>
-            </li>
-          </ul>
-          <ul class="header-nav__menu header-nav__menu_more">
-            <li class="header-nav__item header-nav__item--call">
-              <a href="#"></a>
-            </li>
-            <li class="header-nav__item header-nav__item--chat">
-              <a href="#"></a>
-            </li>
-            <li class="header-nav__item header-nav__item--profile">
-              <a href="#"></a>
-            </li>
-            <li class="header-nav__item header-nav__item--repair">
-              <a href="#"></a>
-            </li>
-            <li class="header-nav__item header-nav__item--checkstatus">
-              <a href="#"></a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main class="main">
-        <div class="title">
-          <div class="title-text">
-            <h1 class="title-text__h1">Услуги и сервисы</h1>
-          </div>
-
-          <nav class="title-nav">
-            <ul class="title-nav__menu">
-              <span class="title-nav__item_text">Оставить заявку</span>
-              <li class="title-nav__item title-nav__item--repair"></li>
-
-              <span class="title-nav__item_text">Статус ремонта</span>
-              <li class="title-nav__item title-nav__item--checkstatus"></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="main-buttons">
-          <button class="main-buttons__item main-buttons__item--active">
-            Ремонтируемые бренды
-          </button>
-          <button class="main-buttons__item">Ремонтируемые устройства</button>
-          <button class="main-buttons__item">Дополнительные услуги</button>
-          <button class="main-buttons__item">Цены на услуги</button>
-          <button class="main-buttons__item">Аренда сервисных центров</button>
-          <button class="main-buttons__item">Специальные цены</button>
-          <button class="main-buttons__item">Отзывы</button>
-        </div>
-        <section class="main-content">
-          <div class="text">
-            <p class="text__first-p">
-              Мы являемся авторизованным сервисным центром по ремонту техники
-              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-              официальной гарантией производителя.
-            </p>
-            <p class="text__second-p">
-              Мы успешно работаем с 1992 года и заслужили репутацию надежного
-              партнера,
-              <span class="text__third-p">
-                что подтверждает большое количество постоянных клиентов. Мы
-                гордимся тем, что к нам обращаются по рекомендациям и, в свою
-                очередь, советуют нас родным и близким.
-              </span>
-            </p>
-            <div class="main__read-more">
-              <button class="main__read-more_btn"></button>
-              <p class="main__read-more_text">Читать далее</p>
-            </div>
-          </div>
-          <div>
-            <img
-              src="img/pictures/CPS picture.png"
-              alt="Логотип CSP на входе в офис"
-              class="section__img"
-            />
-          </div>
-        </section>
-        <div class="title-swiper">
-          <h1 class="title-swiper__h1">Ремонт техники различных брендов</h1>
-        </div>
-        <section class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <a href=""
-                ><img
-                  class="swiper-slide__img"
-                  src="img/pictures/lenovo.svg "
-                  alt="Lenovo"
-              /></a>
-              <button class="swiper-slide__button"></button>
-            </div>
-            <div class="swiper-slide">
-              <a href=""
-                ><img
-                  class="swiper-slide__img"
-                  src="img/pictures/samsung.svg"
-                  alt="Samsung"
-              /></a>
-              <button class="swiper-slide__button"></button>
-            </div>
-            <div class="swiper-slide">
-              <a href=""
-                ><img
-                  class="swiper-slide__img"
-                  src="img/pictures/apple.svg"
-                  alt="Apple"
-              /></a>
-              <button class="swiper-slide__button"></button>
-            </div>
-            <div class="swiper-slide">
-              <a href=""
-                ><img
-                  class="swiper-slide__img"
-                  src="img/pictures/viewsonic.svg"
-                  alt="ViewSonic"
-              /></a>
-              <button class="swiper-slide__button"></button>
-            </div>
-            <div class="swiper-slide">
-              <a href=""
-                ><img
-                  class="swiper-slide__img"
-                  src="img/pictures/bosch.svg"
-                  alt="Bosch"
-              /></a>
-              <button class="swiper-slide__button"></button>
-            </div>
-            <div class="swiper-slide">
-              <a href=""
-                ><img
-                  class="swiper-slide__img"
-                  src="img/pictures/hp.svg"
-                  alt="HP"
-              /></a>
-              <button class="swiper-slide__button"></button>
-            </div>
-            <div class="swiper-slide">
-              <a href=""
-                ><img
-                  class="swiper-slide__img"
-                  src="img/pictures/acer.svg"
-                  alt="Acer"
-              /></a>
-              <button class="swiper-slide__button"></button>
-            </div>
-            <div class="swiper-slide">
-              <a href=""
-                ><img
-                  class="swiper-slide__img"
-                  src="img/pictures/sony.svg"
-                  alt="Sony"
-              /></a>
-              <button class="swiper-slide__button"></button>
-            </div>
-            <div class="swiper-slide">
-              <a href=""
-                ><img
-                  class="swiper-slide__img"
-                  src="img/pictures/lenovo.svg"
-                  alt="Lenovo"
-              /></a>
-              <button class="swiper-slide__button"></button>
-            </div>
-            <div class="swiper-slide">
-              <a href=""
-                ><img
-                  class="swiper-slide__img"
-                  src="img/pictures/samsung.svg"
-                  alt="Samsung"
-              /></a>
-              <button class="swiper-slide__button"></button>
-            </div>
-            <div class="swiper-slide">
-              <a href=""
-                ><img
-                  class="swiper-slide__img"
-                  src="img/pictures/apple.svg"
-                  alt="Apple"
-              /></a>
-              <button class="swiper-slide__button"></button>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </section>
-        <div class="read-more">
-          <button class="read-more__button">Показать все</button>
-        </div>
-        <div class="title-swiper">
-          <h1 class="title-swiper__h1">Ремонт различных видов техники</h1>
-        </div>
-        <section class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <a href=""
-                ><img
-                  class="swiper-slide__img"
-                  src="img/pictures/lenovo.svg "
-                  alt="Lenovo"
-              /></a>
-              <button class="swiper-slide__button"></button>
-            </div>
-            <div class="swiper-slide">
-              <a href=""
-                ><img
-                  class="swiper-slide__img"
-                  src="img/pictures/samsung.svg"
-                  alt="Samsung"
-              /></a>
-              <button class="swiper-slide__button"></button>
-            </div>
-            <div class="swiper-slide">
-              <a href=""
-                ><img
-                  class="swiper-slide__img"
-                  src="img/pictures/apple.svg"
-                  alt="Apple"
-              /></a>
-              <button class="swiper-slide__button"></button>
-            </div>
-            <div class="swiper-slide">
-              <a href=""
-                ><img
-                  class="swiper-slide__img"
-                  src="img/pictures/viewsonic.svg"
-                  alt="ViewSonic"
-              /></a>
-              <button class="swiper-slide__button"></button>
-            </div>
-            <div class="swiper-slide">
-              <a href=""
-                ><img
-                  class="swiper-slide__img"
-                  src="img/pictures/bosch.svg"
-                  alt="Bosch"
-              /></a>
-              <button class="swiper-slide__button"></button>
-            </div>
-            <div class="swiper-slide">
-              <a href=""
-                ><img
-                  class="swiper-slide__img"
-                  src="img/pictures/hp.svg"
-                  alt="HP"
-              /></a>
-              <button class="swiper-slide__button"></button>
-            </div>
-            <div class="swiper-slide">
-              <a href=""
-                ><img
-                  class="swiper-slide__img"
-                  src="img/pictures/acer.svg"
-                  alt="Acer"
-              /></a>
-              <button class="swiper-slide__button"></button>
-            </div>
-            <div class="swiper-slide">
-              <a href=""
-                ><img
-                  class="swiper-slide__img"
-                  src="img/pictures/sony.svg"
-                  alt="Sony"
-              /></a>
-              <button class="swiper-slide__button"></button>
-            </div>
-            <div class="swiper-slide">
-              <a href=""
-                ><img
-                  class="swiper-slide__img"
-                  src="img/pictures/lenovo.svg"
-                  alt="Lenovo"
-              /></a>
-              <button class="swiper-slide__button"></button>
-            </div>
-            <div class="swiper-slide">
-              <a href=""
-                ><img
-                  class="swiper-slide__img"
-                  src="img/pictures/samsung.svg"
-                  alt="Samsung"
-              /></a>
-              <button class="swiper-slide__button"></button>
-            </div>
-            <div class="swiper-slide">
-              <a href=""
-                ><img
-                  class="swiper-slide__img"
-                  src="img/pictures/apple.svg"
-                  alt="Apple"
-              /></a>
-              <button class="swiper-slide__button"></button>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </section>
-        <div class="read-more">
-          <button class="read-more__button">Показать все</button>
-        </div>
-      </main>
-    </div>
   </body>
 </html>

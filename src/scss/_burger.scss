@@ -1,24 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  color: #1b1c21;
-}
-html,
-body {
-  font-family: 'TT Lakes', 'Times New Roman', sans-serif;
-  /* box-sizing: border-box; */
-  height: 100%;
-  /* max-width: 320px; */
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-  background-color: inherit;
-}
-
 .burger {
   position: absolute;
   top: 0;
@@ -26,11 +5,13 @@ select {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  box-shadow: 0 0 40px 0 rgb(159, 158, 158);
   background-color: #ffffff;
   width: 100%;
   z-index: 10;
   transition: left 0.3s ease;
+}
+.burger--shadow {
+  box-shadow: 10px 0 20px 0 rgb(159, 158, 158);
 }
 .burger--active {
   left: 0;
@@ -60,7 +41,6 @@ select {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  cursor: pointer;
   border: none;
   background-color: inherit;
 }
@@ -99,7 +79,6 @@ select {
   font-size: 16px;
   border: none;
   text-align: left;
-  cursor: pointer;
   transition: transform 300ms ease;
 }
 .burger-menu__button:hover {
@@ -137,7 +116,6 @@ select {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  cursor: pointer;
   border: none;
 }
 .burger-footer__button:hover {
@@ -182,7 +160,6 @@ select {
   font-size: 16px;
   background: inherit;
   border: none;
-  cursor: pointer;
   transition: transform 100ms ease;
 }
 .burger-select-language__button:hover {

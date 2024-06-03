@@ -3,6 +3,17 @@
   padding: 0;
   color: #1b1c21;
   font-family: 'TT Lakes', 'Times New Roman', sans-serif;
+  font-size: 14px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'TT Lakes', 'Times New Roman', sans-serif;
+  height: 100%;
 }
 input,
 button,
@@ -11,9 +22,7 @@ select {
   font: inherit;
   background-color: inherit;
 }
-// @media screen and (min-width: 1120px) {
-//   body,
-//   html {
-//     margin: 0 auto;
-//   }
-// }
+button {
+  cursor: pointer;
+  border: none;
+}

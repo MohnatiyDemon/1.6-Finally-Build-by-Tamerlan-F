@@ -144,7 +144,7 @@
 }
 
 .title {
-  padding: 24px 16px 24px 0px;
+  padding: 24px 48px 24px 0px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -327,9 +327,9 @@
 }
 
 @media screen and (min-width: 1120px) {
-  * {
-    background-color: #f8f8f8;
-  }
+  // * {
+  //   background-color: #f8f8f8;
+  // }
   body {
     position: relative;
     margin: 0 auto;

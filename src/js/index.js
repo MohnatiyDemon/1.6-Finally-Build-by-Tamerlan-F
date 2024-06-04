@@ -1,16 +1,11 @@
 import '../scss/style.scss'
 import { initCloseOrOpenBurgerMenu } from './burger-button'
 import { initBurgerMenu, initBurgerSelectLanguage } from './burger-menu'
+import { closeAndOpenBrands } from './close-and-open-brands'
 import { initDescriptionReadMore, initMainItems } from './description'
+import { initSwiperOnMobile } from './init-swiper-on-mobile'
 import { initCloseOrOpenModalCallMenu } from './modal-call'
 import { initCloseOrOpenModalFeedbackMenu } from './modal-feedback'
-import {
-  checkContains,
-  checkCountInterations,
-  checkMedia,
-  setupReadMoreButton,
-  swiperInit
-} from './swiper-brands.js'
 
 document.addEventListener('DOMContentLoaded', () => {
   initMainItems()
@@ -20,9 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initCloseOrOpenBurgerMenu()
   initCloseOrOpenModalFeedbackMenu()
   initCloseOrOpenModalCallMenu()
-  checkContains()
-  checkCountInterations()
-  checkMedia()
-  setupReadMoreButton()
-  swiperInit()
+  initSwiperOnMobile()
+  closeAndOpenBrands()
 })

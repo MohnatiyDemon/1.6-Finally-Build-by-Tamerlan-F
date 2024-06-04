@@ -15,8 +15,6 @@
 }
 
 .swiper-wrapper {
-  display: flex;
-  flex-direction: row;
   gap: 16px 24px;
   padding: 24px 24px 0 24px;
 }
@@ -54,7 +52,7 @@
 .swiper-pagination {
   position: relative;
   margin-top: 20px;
-  display: block;
+  // display: block;
 }
 .swiper-pagination-bullet {
   height: 12px;
@@ -125,5 +123,41 @@
   }
   .swiper-pagination {
     display: none;
+  }
+}
+
+// Медиа для нужного количества слайдов
+/* prettier-ignore */
+@media screen and (min-width: 768px) and (max-width: 1015.9px) {
+  .swiper-slide:nth-child(n+7) {
+    display: none;
+  }
+  .swiper-slide.show {
+    display: flex;
+  }
+}
+/* prettier-ignore */
+@media screen and (min-width: 1016px) and (max-width: 1119.9px){
+  .swiper-slide:nth-child(n+9) {
+    display: none;
+  }
+  .swiper-slide.show {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1120px) and (max-width: 1335.9px) {
+  .swiper-slide:nth-child(n + 7) {
+    display: none;
+  }
+  .swiper-slide.show {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1336px) {
+  .swiper-slide:nth-child(n + 9) {
+    display: none;
+  }
+  .swiper-slide.show {
+    display: flex;
   }
 }

@@ -14,6 +14,7 @@ html,
 body {
   font-family: 'TT Lakes', 'Times New Roman', sans-serif;
   height: 100%;
+  overflow-x: hidden;
 }
 input,
 button,
@@ -25,4 +26,7 @@ select {
 button {
   cursor: pointer;
   border: none;
+}
+body::-webkit-scrollbar {
+  display: none;
 }

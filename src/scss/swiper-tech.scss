@@ -1,0 +1,71 @@
+.swiper-slide--tech {
+  height: 160px;
+  width: 224px;
+  position: relative;
+  padding: 16px;
+}
+.swiper-slide__text {
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+}
+.swiper-slide__img--tech {
+  max-height: 100px;
+  max-width: 120px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.swiper-slide__button--tech {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1015.9px) {
+  .swiper-slide:nth-child(n + 7) {
+    display: none;
+  }
+  .swiper-slide.show {
+    display: flex;
+  }
+}
+// Медиа для нужного количества слайдов
+
+/* prettier-ignore */
+@media screen and (min-width: 768px) and (max-width: 1015.0px) {
+	.swiper-slide--tech:nth-child(n+4) {
+    display: none;
+  }
+  .swiper-slide--tech.show {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1016px) and (max-width: 1119.9px) {
+  .swiper-slide--tech:nth-child(n + 5) {
+    display: none;
+  }
+  .swiper-slide--tech.show {
+    display: flex;
+  }
+}
+/* prettier-ignore */
+@media screen and (min-width: 1120px) and (max-width: 1335.9px) {
+  .swiper-slide--tech:nth-child(n +4) {
+    display: none;
+  }
+  .swiper-slide--tech.show {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1336px) {
+  .swiper-slide--tech:nth-child(n + 5) {
+    display: none;
+  }
+  .swiper-slide--tech.show {
+    display: flex;
+  }
+}

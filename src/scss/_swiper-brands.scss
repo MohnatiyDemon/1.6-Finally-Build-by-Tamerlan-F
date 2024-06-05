@@ -34,6 +34,8 @@
   height: auto;
   width: auto;
   display: block;
+  max-height: 45px;
+  max-width: 120px;
 }
 .swiper-slide__img:hover {
   transform: scale(1.05);

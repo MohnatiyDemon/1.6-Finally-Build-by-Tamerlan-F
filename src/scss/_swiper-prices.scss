@@ -1,0 +1,140 @@
+.swiper-price-title {
+  border-top: 1px solid #d9fff5;
+  background: linear-gradient(90deg, #f8f8f8, #ffffff);
+  padding: 16px 24px;
+}
+.swiper-price-title__text {
+  color: #7e7e82;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.swiper-slide--price {
+  min-height: 200px;
+  min-width: 260px;
+}
+.swiper-slide__button--price {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  background: none;
+  color: #ffffff;
+  background-color: #ff3e79;
+  height: 32px;
+  width: 136px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: auto;
+  transition: transform 100ms ease;
+  font-size: 12px;
+}
+.swiper-slide__button--price::after {
+  content: url('../img/icons/dropdown.svg');
+  margin-left: 10px;
+}
+.swiper-slide__button--price:hover {
+  filter: hue-rotate(235deg);
+  transform: scale(1.05);
+}
+.price-services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.price-sevices__text--services::before {
+  content: 'Ремонтные услуги';
+  color: #7e7e82;
+  display: block;
+}
+.price-sevices__text--cost::before {
+  content: 'Цена';
+  color: #7e7e82;
+  display: block;
+}
+.price-sevices__text--time::before {
+  content: 'Срок';
+  color: #7e7e82;
+  display: block;
+}
+
+.price-description {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.price-description__text {
+  max-width: 421px;
+}
+.price-description__button {
+  background-color: inherit;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+}
+.price-description__button:hover {
+  filter: opacity(0.7);
+}
+.price-description__button::after {
+  position: absolute;
+  content: url('../img/icons/line.svg');
+  right: -15px;
+  top: 0;
+}
+@media screen and (min-width: 768px) {
+  .swiper-wrapper--prices {
+    padding: 0;
+    display: table;
+    border-collapse: separate;
+    margin-top: 60px;
+    margin-left: 25px;
+    max-width: 970px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid transparent;
+  }
+  .swiper-slide--price {
+    display: table-row;
+    height: 64px;
+  }
+  .price-services {
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    flex-direction: row;
+  }
+  .price-services--table-header {
+    border-top: none;
+  }
+  .price-services__text {
+    display: table-cell;
+    padding: 23px 16px;
+  }
+  .price-sevices__text--services {
+    margin-right: auto;
+  }
+  .price-sevices__text--cost {
+    position: absolute;
+    left: 50%;
+  }
+  .price-sevices__text--time {
+    position: absolute;
+    right: 20%;
+  }
+  .price-sevices__text--cost::before,
+  .price-sevices__text--services::before,
+  .price-sevices__text--time::before {
+    display: none;
+  }
+  .price-table-header::before {
+    position: absolute;
+    display: block;
+    top: -35px;
+  }
+}

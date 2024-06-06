@@ -11,70 +11,79 @@
   min-height: 100%;
   transition: right 0.3s ease;
   z-index: 11;
-}
-.modal-call--active {
-  right: 0;
-}
-.modal-call__close-button {
-  background-image: url('../img/icons/close.svg');
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-.modal-call__close-button:hover {
-  filter: hue-rotate(235deg);
-  transform: scale(1.1);
-}
 
-.modal-call__input {
-  height: 48px;
-  border: 1px solid #eaeaea;
-  border-radius: 5px;
-  font-size: 16px;
-  transition: border-color 0.3s;
-  padding: 12px 16px;
-}
-.modal-call__input:focus {
-  border-color: #41f6d7;
-  outline-style: none;
-}
-.modal-call__input::placeholder {
-  color: #b5b6bc;
+  &--active {
+    right: 0;
+  }
+
+  &__close-button {
+    background-image: url('../img/icons/close.svg');
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    &:hover {
+      filter: hue-rotate(235deg);
+      transform: scale(1.1);
+    }
+  }
+
+  &__input {
+    height: 48px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    padding: 12px 16px;
+
+    &:focus {
+      border-color: #41f6d7;
+      outline-style: none;
+    }
+
+    &::placeholder {
+      color: #b5b6bc;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1119.9px) {
   .modal-call {
     padding: 40px 30px;
     width: 440px;
-  }
-  .modal-call--active {
-    right: 0;
-  }
-  .modal-call--shadow {
-    box-shadow: -10px 0 20px 0 rgb(159, 158, 158);
-  }
 
-  .modal-call__close-button {
-    position: absolute;
-    top: 30px;
-    left: -60px;
+    &--active {
+      right: 0;
+    }
+
+    &--shadow {
+      box-shadow: -10px 0 20px 0 rgb(159, 158, 158);
+    }
+
+    &__close-button {
+      position: absolute;
+      top: 30px;
+      left: -60px;
+    }
   }
 }
 @media screen and (min-width: 1120px) {
   .modal-call {
     padding: 40px 30px;
     width: 440px;
-  }
-  .modal-call--active {
-    right: 0;
-  }
 
-  .modal-call--shadow {
-    box-shadow: -10px 0 20px 0 rgb(159, 158, 158);
-  }
-  .modal-call__close-button {
-    position: absolute;
-    top: 30px;
-    left: -60px;
+    &--active {
+      right: 0;
+    }
+
+    &--shadow {
+      box-shadow: -10px 0 20px 0 rgb(159, 158, 158);
+    }
+
+    &__close-button {
+      position: absolute;
+      top: 30px;
+      left: -60px;
+    }
   }
 }

@@ -1,17 +1,21 @@
+$primary-background-color: #f8f8f8;
+$title-border-color: #d9fff5;
+$primary-text-color: #7e7e82;
+
 .footer {
-  background-color: #f8f8f8;
-  border-top: 1px solid #d9fff5;
+  background-color: $primary-background-color;
+  border-top: 1px solid $title-border-color;
   min-width: 320px;
   padding: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
-}
 
-.footer__text {
-  color: #7e7e82;
-  text-align: center;
+  &__text {
+    color: $primary-text-color;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1119.9px) {

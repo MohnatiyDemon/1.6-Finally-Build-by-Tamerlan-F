@@ -11,20 +11,28 @@
   min-height: 100%;
   transition: right 0.3s ease;
   z-index: 11;
+
+  &--active {
+    right: 0;
+  }
+
+  &__close-button {
+    background-image: url('../img/icons/close.svg');
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    &:hover {
+      filter: hue-rotate(235deg);
+      transform: scale(1.1);
+    }
+  }
 }
-.modal-feedback--active {
-  right: 0;
-}
-.modal-feedback__close-button {
-  background-image: url('../img/icons/close.svg');
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-.modal-feedback__close-button:hover {
-  filter: hue-rotate(235deg);
-  transform: scale(1.1);
-}
+
+// .modal-feedback__close-button:hover {
+//   filter: hue-rotate(235deg);
+//   transform: scale(1.1);
+// }
 .modal-form {
   display: flex;
   flex-direction: column;

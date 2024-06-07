@@ -233,7 +233,6 @@ $divider-color: #eaeaea;
 
     &:hover {
       color: $primary-buttons-color;
-      // filter: opacity(0.8);
     }
 
     &::before {
@@ -332,7 +331,6 @@ $divider-color: #eaeaea;
     position: relative;
     margin: 0 auto;
     max-width: 1440px;
-    overflow-x: hidden;
   }
 
   .main {

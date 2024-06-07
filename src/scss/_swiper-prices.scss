@@ -34,7 +34,7 @@ $primary-buttons-filter: hue-rotate(235deg);
     color: $white;
     background-color: $primary-buttons-color;
     height: 32px;
-    width: 136px;
+    width: 119px;
     border-radius: 15px;
     text-transform: uppercase;
     font-weight: bold;
@@ -109,7 +109,7 @@ $primary-buttons-filter: hue-rotate(235deg);
 
 @media screen and (min-width: 768px) {
   .swiper-wrapper--prices {
-    padding: 0;
+    padding: 0 20px 0 0;
     display: table;
     border-collapse: separate;
     margin-top: 60px;

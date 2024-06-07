@@ -1,3 +1,5 @@
+// тоглим доп текст и меняем активный класс у основной менюшки
+
 export function initMainItems() {
   const mainItemsContainer = document.querySelector('.main-items')
 

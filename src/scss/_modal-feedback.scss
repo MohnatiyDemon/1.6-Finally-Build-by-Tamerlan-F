@@ -1,9 +1,17 @@
+$white: #ffffff;
+$primary-buttons-filter: hue-rotate(235deg);
+$unfocused-border-color: #eaeaea;
+$focused-border-color: #41f6d7;
+$placeholder-text-color: #b5b6bc;
+$primary-pink-color: #ff3e79;
+$primary-links-color-hover: #0618e6;
+
 .modal-feedback {
   position: absolute;
   top: 0;
   right: -100%;
   padding: 24px 16px;
-  background-color: #ffffff;
+  background-color: $white;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -23,89 +31,100 @@
     border-radius: 50%;
 
     &:hover {
-      filter: hue-rotate(235deg);
+      filter: $primary-buttons-filter;
       transform: scale(1.1);
     }
   }
 }
 
-// .modal-feedback__close-button:hover {
-//   filter: hue-rotate(235deg);
-//   transform: scale(1.1);
-// }
 .modal-form {
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
-.modal-feedback__input {
-  height: 48px;
-  border: 1px solid #eaeaea;
-  border-radius: 5px;
-  font-size: 16px;
-  transition: border-color 0.3s;
-  padding: 12px 16px;
-}
-.modal-feedback__input:focus {
-  border-color: #41f6d7;
-  outline-style: none;
-}
-.modal-feedback__input::placeholder {
-  color: #b5b6bc;
+
+  &__link {
+    text-decoration: none;
+    color: $primary-pink-color;
+
+    &:hover {
+      color: $primary-links-color-hover;
+    }
+  }
+
+  &__submit {
+    color: $white;
+    background-color: $primary-pink-color;
+    height: 32px;
+    width: 136px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: auto;
+    transition: transform 100ms ease;
+
+    &:hover {
+      filter: $primary-buttons-filter;
+      transform: scale(1.05);
+    }
+
+    &::after {
+      content: url('../img/icons/dropdown.svg');
+      margin-left: 10px;
+    }
+  }
 }
 
-.modal-feedback__input--textarea {
-  height: 118px;
-}
+.modal-feedback {
+  &__input {
+    height: 48px;
+    border: 1px solid $unfocused-border-color;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    padding: 12px 16px;
 
-.title-form__text {
-  position: relative;
-  font-size: 24px;
+    &:focus {
+      border-color: $focused-border-color;
+      outline-style: none;
+    }
+
+    &::placeholder {
+      color: $placeholder-text-color;
+    }
+
+    &--textarea {
+      height: 118px;
+    }
+  }
 }
-.title-form__text::before {
-  content: url('../img/icons/highlight.svg');
-  position: absolute;
-  left: -17px;
-  top: -9px;
-}
-.modal-form__link {
-  text-decoration: none;
-  color: #ff3e79;
-}
-.modal-form__link:hover {
-  color: #0618e6;
-}
-.modal-form__submit {
-  color: #ffffff;
-  background-color: #ff3e79;
-  height: 32px;
-  width: 136px;
-  border-radius: 15px;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-left: auto;
-  transition: transform 100ms ease;
-}
-.modal-form__submit:hover {
-  filter: hue-rotate(235deg);
-  transform: scale(1.05);
-}
-.modal-form__submit::after {
-  content: url('../img/icons/dropdown.svg');
-  margin-left: 10px;
+.title-form {
+  &__text {
+    position: relative;
+    font-size: 24px;
+
+    &::before {
+      content: url('../img/icons/highlight.svg');
+      position: absolute;
+      left: -17px;
+      top: -9px;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1119.9px) {
   .modal-feedback {
     padding: 40px 30px;
     width: 440px;
+
+    &--active {
+      right: 0;
+    }
+
+    &--shadow {
+      box-shadow: -10px 0 20px 0 rgb(159, 158, 158);
+    }
   }
-  .modal-feedback--active {
-    right: 0;
-  }
-  .modal-feedback--shadow {
-    box-shadow: -10px 0 20px 0 rgb(159, 158, 158);
-  }
+
   .title-form__text::before {
     left: -31px;
     top: -9px;
@@ -120,20 +139,24 @@
   .modal-feedback {
     padding: 40px 30px;
     width: 440px;
+
+    &--active {
+      right: 0;
+    }
+
+    &--shadow {
+      box-shadow: -10px 0 20px 0 rgb(159, 158, 158);
+    }
+
+    &__close-button {
+      position: absolute;
+      top: 30px;
+      left: -60px;
+    }
   }
-  .modal-feedback--active {
-    right: 0;
-  }
+
   .title-form__text::before {
     left: -31px;
     top: -9px;
-  }
-  .modal-feedback--shadow {
-    box-shadow: -10px 0 20px 0 rgb(159, 158, 158);
-  }
-  .modal-feedback__close-button {
-    position: absolute;
-    top: 30px;
-    left: -60px;
   }
 }

@@ -1,3 +1,5 @@
+// тоглим и скрываем меню со звонком по клику на кнопку или вне меню
+
 const modalCallMenu = document.querySelector('.modal-call')
 const modalCallCloseButton = document.querySelector('.modal-call__close-button')
 const modalCallOpenButtonHeader = document.querySelector(

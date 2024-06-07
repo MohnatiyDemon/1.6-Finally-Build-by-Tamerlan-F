@@ -2,7 +2,11 @@ $title-border-color: #d9fff5;
 $slide-border-color: #eaeaea;
 $smoke: #f8f8f8;
 $white: #ffffff;
-$primary-text-color: #7e7e82;
+$smoke-text-color: #7e7e82;
+$pagination-bullet-color: #dddddd;
+$pagination-bullet-active-color: #b5b6bc;
+$primary-buttons-color: #ff3e79;
+
 .swiper-container {
   min-width: 320px;
 }
@@ -10,10 +14,10 @@ $primary-text-color: #7e7e82;
 .swiper-brands-title {
   border-top: 1px solid $title-border-color;
   padding: 16px;
-  background: linear-gradient(90deg, $smoke, #ffffff);
+  background: linear-gradient(90deg, $smoke, $white);
 
   &__text {
-    color: #7e7e82;
+    color: $smoke-text-color;
     line-height: 24px;
     font-size: 16px;
     font-weight: 500;
@@ -69,11 +73,11 @@ $primary-text-color: #7e7e82;
   &-bullet {
     height: 12px;
     width: 12px;
-    background-color: #dddddd;
+    background-color: $pagination-bullet-color;
     opacity: 1;
 
     &-active {
-      background-color: #b5b6bc;
+      background-color: $pagination-bullet-active-color;
     }
   }
 }
@@ -83,10 +87,6 @@ $primary-text-color: #7e7e82;
   padding: 24px;
   align-items: center;
 
-  &:hover {
-    opacity: 0.9;
-  }
-
   &__button {
     position: relative;
     background-color: inherit;
@@ -95,6 +95,10 @@ $primary-text-color: #7e7e82;
     font-size: 16px;
     font-weight: 500;
     margin-left: 24px;
+
+    &:hover {
+      color: $primary-buttons-color;
+    }
 
     &::before {
       content: url('../img/icons/expand.svg');

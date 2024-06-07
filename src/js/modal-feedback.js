@@ -1,3 +1,5 @@
+// тоглим и скрываем меню со обратной связью по клику на кнопку или вне меню
+
 const modalFeedbackMenu = document.querySelector('.modal-feedback')
 const modalFeedbackCloseButton = document.querySelector(
   '.modal-feedback__close-button'

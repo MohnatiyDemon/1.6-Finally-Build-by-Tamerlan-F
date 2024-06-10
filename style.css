@@ -498,7 +498,6 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  min-height: 794.4px;
   height: 100%;
   transition: right 0.3s ease;
   z-index: 11; }
@@ -616,7 +615,6 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  min-height: 794.4px;
   height: 100%;
   transition: right 0.3s ease;
   z-index: 11; }

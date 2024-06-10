@@ -320,6 +320,7 @@ ul {
   min-height: 100%;
   background-color: #ffffff;
   width: 100%;
+  max-width: 360px;
   z-index: 10;
   transition: left 0.3s ease; }
   .burger--shadow {
@@ -492,6 +493,7 @@ ul {
   right: -100%;
   padding: 24px 16px;
   background-color: #ffffff;
+  max-width: 440px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -501,6 +503,8 @@ ul {
   z-index: 11; }
   .modal-feedback--active {
     right: 0; }
+  .modal-feedback--shadow {
+    box-shadow: -10px 0 20px 0 #9f9e9e; }
   .modal-feedback__close-button {
     background-image: url(./static/close.svg);
     width: 40px;
@@ -607,6 +611,7 @@ ul {
   padding: 24px 16px;
   background-color: #ffffff;
   width: 100%;
+  max-width: 440px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -615,6 +620,8 @@ ul {
   z-index: 11; }
   .modal-call--active {
     right: 0; }
+  .modal-call--shadow {
+    box-shadow: -10px 0 20px 0 #9f9e9e; }
   .modal-call__close-button {
     background-image: url(./static/close.svg);
     width: 40px;
